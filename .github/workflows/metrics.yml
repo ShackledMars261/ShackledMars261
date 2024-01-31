@@ -7,6 +7,8 @@ on:
   push: {branches: ["master", "main"]}
 jobs:
   github-metrics:
+    environment:
+      name: metrics
     runs-on: ubuntu-latest
     permissions:
       contents: write
